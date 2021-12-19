@@ -1,8 +1,8 @@
 from stellar_sdk import Server
 
 server = Server('https://horizon-testnet.stellar.org')
-public_key = ['GCQPIQF5T3VL5U33BFQFZRLLWG52I7TPC5CAUIHEXUB7ELXZYKJ25FHQ',
-              'GD7ZOVHTZAQQSBFWSAMVPX5UPN5TP2V3RN76XIBQVAEAOG5UGQXRRWIW']
+public_key = ['GBUIND2QZBXZS4YYQCVL4LI4JW73TCGYBSLCSRFJLZTGNR6AV5SFFHHH',
+              'GBFIKP4DHX2VWTRHFLNQDOZF5UPTH3PDVCMWPUA2SET4HVQAAC4NZXXX']
 for key in public_key:
     account = server.accounts().account_id(key).call()
 
