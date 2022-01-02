@@ -35,6 +35,16 @@ if __name__ == '__main__':
                   [inf, 3, 1, inf, 6],
                   [1, 2, inf, 6, inf]])
 
-    D, parents = bellman_ford(B, 0)
+# XLM, ETH, BTC, BNB, USDT
+
+    B1 = np.array(
+        [[1, 0.0000725, 0.0000057, 0.000524, 0.2740],
+         [inf, 1, 0.079063, inf, 3799.10],
+         [inf, 12.65, 1, inf, 48005.71],
+         [inf, 0.1375, 0.010869, 1, 521.4],
+         [inf, inf, inf, inf, 1]]
+    )
+
+    D, parents = bellman_ford(B1, 0)
     print(f'Distances: {D}')
     print(f'Parents: {parents}')

@@ -92,4 +92,4 @@ for path in paths:
                 rate = math.exp(-graph[start][end])
                 money *= rate
                 print(f"{start} to {end} at {rate} = {money}")
-    print("\n")
+    print("\n")\

@@ -24,7 +24,7 @@ transaction = (
     )
     .append_payment_op(destination=destination_id, asset=Asset.native(), amount="100")
     .add_text_memo("Test Transaction")
-    .set_timeout(30)
+    .set_timeout(300)
     .build()
 )
 transaction.sign(source_key)
