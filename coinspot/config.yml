@@ -1,6 +1,6 @@
 api:
- key: '623cacc8d8684ab704cc862b318d18bb'
- secret: 'VGDJ3HJH9Y7W5YRTP1VWGGWV1TJC94E3K8LB2FF5X4CYW6BZEUFVCBQ3B6L7U2M1UE44WMN9LPNFRMJG'
+ key: ''
+ secret: ''
  endpoint: 'www.coinspot.com.au'
 debug: False
 logfile: 'coinspot.log'

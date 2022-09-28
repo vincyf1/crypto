@@ -1,8 +1,8 @@
 from stellar_sdk import Server, Keypair, Network, TransactionBuilder, Asset
 import os
 
-server = Server("https://horizon-testnet.stellar.org")
-source = Keypair.from_secret(os.getenv('Account1_SecretSeed'))
+server = Server("https://horizon.stellar.org")
+source = Keypair.from_secret(os.getenv('Albedo_SecretSeed'))
 # source_account = server.load_account(source.public_key)
 #
 # asset_to_buy = Asset("USDC", "")
@@ -27,7 +27,7 @@ source = Keypair.from_secret(os.getenv('Account1_SecretSeed'))
 source_account = server.load_account(account_id=source.public_key)
 
 native_asset = Asset('XLM')
-asset_to_buy = Asset('USDC', '')
+asset_to_buy = Asset('USDC', 'GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN')
 
 path_payments = Server.strict_receive_paths(
     server, source=[native_asset], destination_asset=asset_to_buy,
